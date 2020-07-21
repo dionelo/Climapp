@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <script src="https://kit.fontawesome.com/0d82aa1ac2.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css"/>
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <article class="widget">
+                <form class="weatherLocation">
+                    <input placeholder="¿Donde?" type="text"/>
+                    <button class="search"><i class="fas fa-search"></i></button>
+                </form>
+                <div class="weatherIcon"><img></div>
+                <div class="weatherInfo">
+                    <div class="temperature"><span></span></div>
+                    <div class="description">    
+                        <div class="weatherCondition"></div>    
+                        <div class="place"></div>
+                    </div>
+                </div>
+                <div class="date"></div>
+            </article>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+</html>
